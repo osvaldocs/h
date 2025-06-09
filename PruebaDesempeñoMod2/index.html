@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riwi Coder</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+      <img class="riwi-logo" src="./Assets/LogoRiwi.webp" alt="Riwi's logo">
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="home">Pablo Campos, Riwi Coder.</h1>
+
+    <section class="about-me">
+      <h2 class="grid-item1" id="about-me">About me</h2>
+      <p class="gird-item2">Hello everyone!. My name is Pablo Campos. I am passionate about web development.
+        I completed my studies at Riwi, and I wanted you to know a little about my projects carried out during my apprenticeship.</p>
+      <img class="grid-item3" id="avatar" src="./Assets/avatar.webp" alt="avatar">
+    </section>
+
+    <section class="portfolio">
+      <h2 id="portfolio">Portfolio</h2>
+      <div class="grid-container">
+        <a href="https://github.com/osvaldocs/freecodecamp-curso-html-css/blob/master/index.html" target="_blank" rel="noopener noreferrer"><img class="grid-image"  src="./Assets/appdegatos.png" alt="screenshot de appdegatos"></a>
+        <a href="https://github.com/osvaldocs/entrenamientosem3" target="_blank" rel="noopener noreferrer"><img class="grid-image" src="./Assets/lublos-cafe.png" alt="screenshot lublos-cafe"></a>
+        <a href="https://github.com/osvaldocs/HtmlRiwi/tree/main/EntrenamientoSem2Html" target="_blank" rel="noopener noreferrer"><img class="grid-image" src="./Assets/ninja.png" alt="screenshot reto ninja"></a>
+      </div>
+    </section>
+
+    <h2 id="contact">Contact</h2>
+      <div class="flex-form">
+        <form id="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text"name="name" id="name" required placeholder="nombre">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="email">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" rows="6" required placeholder="mensaje"></textarea>
+        <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>    
+
+    
+  </main>
+
+  <footer>
+    <img class="riwi-logo" src="./Assets/LogoRiwi.webp" alt="Riwi's logo">
+    <p>Prueba desempeño Riwi.No copyright.</p>
+  </footer>
+</body>
+</html>

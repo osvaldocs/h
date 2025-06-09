@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+body, html {
+margin: 0;
+padding: 0; 
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-image: url(./Assets/fondo.jpg)
+}
+
+h1 {
+  text-align: center;   
+  color: white;
+}
+
+h2 {
+  font-size: xx-large;
+  color: salmon;
+  text-align: center;
+}
+
+header{
+  color: aliceblue;
+  background-color: #2b1cac;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.riwi-logo {
+  width: 15%;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  transition: 0.3s;
+  font-size: 1.3em;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+nav ul li a:hover {
+  transform: scale(1.1);
+}
+
+
+.about-me {
+  margin: 5% 0;  
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  grid-template-rows: auto 1fr;
+}
+
+.about-me p {
+  color: white;
+  font-size: 2em;
+}
+
+#avatar {
+  border-radius: 50%;
+  width: 45%;
+}
+
+.grid-item1 {
+  text-align: center;
+  grid-column: 1  /-1;
+}
+
+.grid-item2 {
+  place-self: center;
+  grid-column: 1 / 2;
+}
+
+.grid-item3 {
+  place-self: center;
+  grid-column: 2 / 3;
+}
+
+.portfolio {
+  margin: 5% 0;  
+}
+
+.grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+  place-content: center;
+}
+
+.porfolio-item {
+  place-self: center;
+  place-content: center;
+}
+
+a {
+  display: inline;
+}
+
+.grid-image {
+  width: 70%;
+}
+
+.flex-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  
+}
+
+#contact-form {
+  width: 100%;
+  max-width: 500px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  border: 1px grey;
+  text-align: center;
+}
+
+footer {
+  background-color: #2b1cac;
+  display: flex;  
+  justify-content: center;
+}
